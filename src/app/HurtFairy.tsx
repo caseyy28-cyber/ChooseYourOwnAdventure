@@ -4,7 +4,7 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 export default function StartScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.text}>IT WAS A TEST!</Text>
+      <Text style={styles.text}>the fairy is actually John Quinones, IT WAS A TEST</Text>
       <Text style={styles.text}>she curses you, turning you into a frog, she then flies away.</Text>
       <Link href="/GOAT" asChild>
         <Pressable accessibilityRole="button" style={styles.button}>

@@ -1,10 +1,14 @@
 import { Link } from 'expo-router';
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function StartScreen() {
   return (
     <View style={styles.container}>
-        <Image style={{ width: 200, height: 200 }} source={require('../assets/goat.png')} />
+      {/* <Image
+        style={styles.image}
+        source={require('../assets/goat.png')}
+        resizeMode="contain"
+      /> */}
       <Text style={styles.text}>You continue on the path encountering a wise wizard goat with a lengthy beard, she starts speaking in goatnesss "BAHHHHH" she screams. luckily, unicorns speak goatness.</Text>
       <Text style={styles.text}>Please select which animal you are.</Text>
       <Link href="/UnicornGoat" asChild>
@@ -27,6 +31,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#422048',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  image: {
+    width: 200,
+    height: 200,
   },
   text: {
     color: '#ca81ec',

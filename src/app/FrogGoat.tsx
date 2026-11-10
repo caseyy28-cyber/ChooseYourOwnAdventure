@@ -1,10 +1,15 @@
 import { Link } from 'expo-router';
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function StartScreen() {
   return (
     <View style={styles.container}>
-      <Image style={{ width: 200, height: 200 }} source={require('../assets/frog.png')} />
+      {/* <Image
+        style={{ width: 200, height: 200 }}
+        source={require('../assets/frog.png')}
+        resizeMode="contain"
+        accessibilityLabel="Frog"
+      /> */}
       <Text style={styles.text}>the goat eats you, i guess "BAHHHHH" means "im gonna eat you"</Text>
       <Text style={styles.text}>the end</Text>
       <Link href="/start" asChild>

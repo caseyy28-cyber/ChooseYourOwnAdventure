@@ -4,6 +4,11 @@ import { Pressable, StyleSheet, Text, View } from 'react-native';
 export default function StartScreen() {
   return (
     <View style={styles.container}>
+      {/* <Image
+        source={require('../assets/fairy.png')}
+        style={{ width: 200, height: 200 }}
+        resizeMode="contain"
+      /> */}
       <Text style={styles.text}>she gives you a smooch and sprinkles you with fairy dust</Text>
       <Text style={styles.text}>you continue on the path</Text>
       <Link href="/GOAT" asChild>

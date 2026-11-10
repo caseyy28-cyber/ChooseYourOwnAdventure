@@ -1,10 +1,10 @@
 import { Link } from 'expo-router';
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View } from 'react-native';
 
 export default function StartScreen() {
   return (
     <View style={styles.container}>
-      <Image style={{ width: 200, height: 200 }} source={require('../assets/cupcake.png')} />
+      {/* <Image style={{ width: 200, height: 200 }} source={require('../assets/cupcake.png')} /> */}
       <Text style={styles.text}>She greets you kindly and gives you a plate of cupcakes and muffins</Text>
       <Text style={styles.text}>you leave with a full stomach</Text>
       <Link href="/ExitCave" asChild>

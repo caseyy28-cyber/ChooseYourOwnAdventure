@@ -1,12 +1,18 @@
 import { useRouter } from 'expo-router';
-import { Image, Pressable, StyleSheet, Text, View } from 'react-native';
+import { Pressable, StyleSheet, Text, View, useWindowDimensions } from 'react-native';
 
 export default function StartScreen() {
   const router = useRouter();
+  const { width } = useWindowDimensions();
+  const imageSize = Math.min(200, width * 0.7);
 
   return (
     <View style={styles.container}>
-    <Image style={{ width: 200, height: 200 }} source={require('../assets/witch.png')} />
+      {/* <Image
+        source={require('../../assets/witch.png')}
+        style={[styles.image, { width: imageSize, height: imageSize }]}
+        resizeMode="contain"
+      /> */}
       <Text style={styles.text}>The cave has a witch inside!</Text>
       <Text style={styles.text}>Do you talk to her?</Text>
       <Pressable
@@ -33,6 +39,10 @@ const styles = StyleSheet.create({
     backgroundColor: '#422048',
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  image: {
+    width: 200,
+    height: 200,
   },
   text: {
     color: '#ca81ec',
